@@ -10,7 +10,7 @@ const gameBody = (decription, taskFunc) => {
         const step = taskFunc();
 
         console.log(`Question: ${step[0]}`);
-        const answer = readlineSync.question('Answer; ');
+        const answer = readlineSync.question('Answer: ');
 
         if (answer == step[1]) {
             console.log('Correct!');
