@@ -17,7 +17,7 @@ const gameBody = (decription, taskFunc) => {
             mark += 1;
         } else {
             console.log(`${answer} is wrong answer ;(. Correct answer was ${step[1]} .`);
-            console.log(`Let's try again, ${playerName}`);
+            console.log(`Let's try again, ${playerName}!`);
             break;
         }
     }
