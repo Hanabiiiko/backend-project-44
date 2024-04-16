@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-console.log('Welocme to the Brain Games!')
+console.log('Welcome to the Brain Games!')
 cli()
 
 import cli from '../src/cli.js';
