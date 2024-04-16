@@ -4,24 +4,24 @@ import gameBody from '../src/gameBody.js';
 const description = 'What number is missing in the progression?';
 
 const task = () => {
-    let progression = [];
+  const progression = [];
 
-    let randomAdd = (Math.round(Math.random() * 4) + 1);
-    let randomProgIndex = Math.round(Math.random() * 9);
-    let answer;
-    let mark = 0;
+  const randomAdd = (Math.round(Math.random() * 4) + 1);
+  const randomProgIndex = Math.round(Math.random() * 9);
+  let answer;
+  let mark = 0;
 
-    for (let i = 0; i <= 10; i += 1) {
-        mark += randomAdd;
-        if (i === randomProgIndex) {
-            answer = mark;
-            progression.push('..');
-        } else {
-            progression.push(mark);
-        }
+  for (let i = 0; i <= 10; i += 1) {
+    mark += randomAdd;
+    if (i === randomProgIndex) {
+      answer = mark;
+      progression.push('..');
+    } else {
+      progression.push(mark);
     }
+  }
 
-    return [progression.join(' '), answer];
-}
+  return [progression.join(' '), answer];
+};
 
 gameBody(description, task);
