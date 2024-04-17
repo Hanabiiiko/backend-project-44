@@ -12,7 +12,7 @@ const gameBody = (decription, taskFunc) => {
     console.log(`Question: ${step[0]}`);
     const answer = readlineSync.question('Answer: ');
 
-    if (answer == step[1]) {
+    if (answer == step[1]) { // eslint-disable-line
       console.log('Correct!');
       mark += 1;
     } else {
