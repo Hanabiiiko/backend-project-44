@@ -1,8 +1,3 @@
-#!/usr/bin/env node
-import gameBody from '../src/gameBody.js';
-
-const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
 function isPrime(number) {
   if (number <= 1) {
     return false;
@@ -17,10 +12,10 @@ function isPrime(number) {
   return true;
 }
 
-const task = () => {
+const brainPrimeTask = () => {
   const q = Math.round(Math.random() * 23);
   const a = isPrime(q) ? 'yes' : 'no';
   return [q, a];
 };
 
-gameBody(description, task);
+export default brainPrimeTask;

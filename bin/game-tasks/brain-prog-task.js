@@ -1,9 +1,4 @@
-#!/usr/bin/env node
-import gameBody from '../src/gameBody.js';
-
-const description = 'What number is missing in the progression?';
-
-const task = () => {
+const brainProgTask = () => {
   const progression = [];
 
   const randomAdd = (Math.round(Math.random() * 4) + 1);
@@ -24,4 +19,4 @@ const task = () => {
   return [progression.join(' '), answer];
 };
 
-gameBody(description, task);
+export default brainProgTask;

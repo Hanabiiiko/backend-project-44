@@ -1,9 +1,4 @@
-#!/usr/bin/env node
-import gameBody from '../src/gameBody.js';
-
-const description = 'What is the result of the expression?';
-
-const task = () => {
+const brainCalcTask = () => {
   const operand1 = Math.round(Math.random() * 10);
   const operand2 = Math.round(Math.random() * 10);
 
@@ -27,4 +22,4 @@ const task = () => {
   return [`${operand1} ${indexOper} ${operand2}`, answer]; // basicaly return [question, answer]
 };
 
-gameBody(description, task);
+export default brainCalcTask;

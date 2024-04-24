@@ -1,8 +1,3 @@
-#!/usr/bin/env node
-import gameBody from '../src/gameBody.js';
-
-const description = 'Find the greatest common divisor of given numbers.';
-
 function gcd(a, b) {
   if (b === 0) {
     return a;
@@ -10,7 +5,7 @@ function gcd(a, b) {
   return gcd(b, a % b);
 }
 
-const task = () => {
+const brainGcdTask = () => {
   const operand1 = Math.round(Math.random() * 50);
   const operand2 = Math.round(Math.random() * 50);
 
@@ -19,4 +14,4 @@ const task = () => {
   return [`${operand1} ${operand2}`, answer]; // basicaly return [question, answer]
 };
 
-gameBody(description, task);
+export default brainGcdTask;
